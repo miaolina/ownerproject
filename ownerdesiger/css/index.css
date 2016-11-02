@@ -1,0 +1,102 @@
+*{margin:0;}
+section{text-align: center;}
+a{text-decoration: none;color:#fff;}
+#background_1,#background_2,#background_3{
+  display:block;
+  width:33%;
+  height:979px;
+  overflow:hidden;
+  float:left;
+  /*����ͼƬ�̶�*/
+  background-attachment: fixed;
+  cursor:pointer;
+  text-align: center;
+
+}
+
+.container{
+  font-size: 20px;
+  background-attachment: fixed;
+  margin-top:220px;
+
+}
+h2{
+  font-size: 20px;
+  background-attachment: fixed;
+  visibility:hidden;
+  margin-top: 35px;
+}
+#background_1:hover h2,#background_2:hover h2,#background_3:hover h2{visibility:visible;}
+#background_1 {
+  background: url(../img/bg06.jpg) no-repeat -400px 0;
+}
+#background_2{
+  width:34%;
+  background:url("../img/index01.jpg") no-repeat -280px 0;
+}
+#background_3{
+  background:url("../img/bg03.jpg") no-repeat -475px 0;
+}
+.container p{
+  margin-top:10px;
+}
+.container p:nth-child(1){
+  font-size:25px;
+}
+.container p:nth-child(2){
+  font-weight:bold;
+  font-size:40px;
+}
+.container p:nth-child(4){
+  border-top: 1px solid #fff;
+  border-bottom:1px solid #fff;
+  padding:10px 0;
+  width:20%;
+  margin:auto;
+  margin-top:10px;
+}
+/*#background a{*/
+  /*background-color: rgba(0,0,0,.5);*/
+  /*border:0;*/
+  /*padding:15px 30px;*/
+  /*color:#fff;*/
+  /*text-decoration:none;*/
+  /*margin:10px 30px;*/
+/*}*/
+
+
+
+/*PC屏幕专用样式*/
+@media screen and (min-width: 992px) {
+  #background_1,
+  #background_3{
+    width: 33%;
+
+  }
+  #background_2 {
+    width: 34%;
+
+  }
+
+}
+/*PAD屏幕专用样式*/
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  #background_1,
+  #background_3{
+    width: 33%;height:1024px;
+  }
+  #background_2 {
+    width: 34%;
+    height:100%;
+    height:1024px;
+  }
+}
+/*PHONE屏幕专用样式*/
+@media screen and (max-width: 767px) {
+  #background_1,
+  #background_2,
+  #background_3{
+    width: 100%;
+  }
+
+}
